@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <div id = "container" class = "override">
+                <div id = "login-div">
+                    <div id = "input-div">
+                        <h1>Sign Up</h1>
+                        <div style = "flex-grow: 1;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label>Email / Username: </label>
+                                    </td>
+                                    <td>
+                                        <input>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Password: </label>
+                                    </td>
+                                    <td>
+                                        <input type = "password">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Confirm Password: </label>
+                                    </td>
+                                    <td>
+                                        <input type = "password">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div style = "display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 10px;">
+                            <a href = "sim">
+                                <button>Sign up</button>
+                            </a>
+                            <button>
+                                <img src = "{{ url_for('static', filename='resources/google.png') }}"">
+                                <p>Sign up with Google</p>
+                            </button>
+                            <button>Already have an account?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
